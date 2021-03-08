@@ -1,0 +1,19 @@
+set_pin_assignment	{ CLOCK_24 }	{ LOCATION = K14; }
+set_pin_assignment	{ ps2_clk }		{ LOCATION = C5; }
+set_pin_assignment	{ ps2_data }	{ LOCATION = B6; }
+set_pin_assignment	{ VGA_B[2] }	{ LOCATION = P11; }
+set_pin_assignment	{ VGA_B[3] }	{ LOCATION = M10; }
+set_pin_assignment	{ VGA_G[1] }	{ LOCATION = P12; }
+set_pin_assignment	{ VGA_G[2] }	{ LOCATION = N11; }
+set_pin_assignment	{ VGA_G[3] }	{ LOCATION = L10; }
+set_pin_assignment	{ VGA_R[1] }	{ LOCATION = M12; }
+set_pin_assignment	{ VGA_R[2] }	{ LOCATION = R16; }
+set_pin_assignment	{ VGA_R[3] }	{ LOCATION = N12; }
+set_pin_assignment	{ VGA_VS }		{ LOCATION = P5; }
+set_pin_assignment	{ VGA_HS }		{ LOCATION = N5; }
+
+
+
+
+
+
