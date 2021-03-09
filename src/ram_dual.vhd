@@ -35,9 +35,7 @@
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-
-LIBRARY altera_mf;
-USE altera_mf.all;
+use IEEE.numeric_std.all;
 
 ENTITY ram_dual IS
 	PORT
@@ -53,19 +51,21 @@ END ram_dual;
 
 
 ARCHITECTURE SYN OF ram_dual IS
+
+	TYPE ram_type IS ARRAY(0 to 4096) of STD_LOGIC_VECTOR (7 DOWNTO 0);
+	SIGNAL ram : ram_type;
+
 BEGIN
-	
-	ram_dual_ip_1:  entity work.ram_dual_ip port map(
-		dia	=> data,
-		addra	=> wraddress,
-		wea	=> wren,
-		clka	=> clock,
-		
-		dob	=> q,
-		dib	=> "00000000",
-		addrb => rdaddress,
-		web	=> '0',
-		clkb => clock
-	);
+
+   process(clock)
+   begin
+	   if rising_edge(clock) then
+		   if wren = '1' then
+				ram(to_integer(unsigned(wraddress))) <= data;
+		   end if;
+
+		   q <= ram(to_integer(unsigned(rdaddress)));
+	   end if;
+   end process;
 
 END SYN;

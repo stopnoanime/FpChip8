@@ -3,6 +3,8 @@ Fork of the awesome FpChip8 to the Lichee Tang FPGA Board.
 
 You need to make a custom VGA and PS2 connector for this board.
 
+This version uses a SD card to store ROMS. Go to roms folder for more info.
+
 ### PS2:
 ![](https://www.digikey.com/eewiki/download/attachments/28278929/ps2_keyboard_block_diagram.jpg?version=1&modificationDate=1385409326077&api=v2)
 

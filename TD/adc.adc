@@ -11,8 +11,10 @@ set_pin_assignment	{ VGA_R[2] }	{ LOCATION = R16; }
 set_pin_assignment	{ VGA_R[3] }	{ LOCATION = N12; }
 set_pin_assignment	{ VGA_VS }		{ LOCATION = P5; }
 set_pin_assignment	{ VGA_HS }		{ LOCATION = N5; }
-
-
+set_pin_assignment	{ CS }	        { LOCATION = N14; }
+set_pin_assignment	{ MISO }	    { LOCATION = F13; }
+set_pin_assignment	{ MOSI }	    { LOCATION = H14; }
+set_pin_assignment	{ SCLK }	    { LOCATION = M9; }
 
 
 
