@@ -2,6 +2,7 @@
 !/*.gitignore
 
 !roms*
+roms/hex_out.txt
 
 !src
 src/*
